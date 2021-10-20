@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+        </style>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="../yoga_css/style.css">
+    <style>
+        body{
+            background-image: url("../images/Background_Image.jpg");
+            background-color:rgba(255, 255, 255, 0.7);
+            border-radius: 20;
+            background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+<!--header version 1-->
+<section class="gridHeader">
+    <div id="logo" class="headerGridArea">
+        <button type="button" class="logoHome">
+        <a href="/index.html">   
+            <img src="../images/Logo.png" alt="logo" style="height: 70px; margin: 3px 20px;">
+        </a>
+        </button>
+    </div>
+    <div id="flexNav" class="headerGridArea">
+        <ul class="regNav">
+            <div class="dropdown">
+                <button class="dropbtn"
+                style="border:none; background-color: transparent;
+                color: white; font-size: 15px;">
+                    Self-help</button>
+                <div class="dropdown-content">
+                <a href="#">Journaling</a>
+                <a href="#">Yoga</a>
+                <a href="#">Meditation</a>
+                <a href="#">Music Collection</a>
+                <a href="#">Podcast</a>  
+                </div>
+        </div>
+            <li><a href="/FP_group1-gideon/html/articles.html">Articles</a></li>
+            <li><a href="#">Help line</a></li>
+            <li><a href="#"style="margin-right: 0;">About us</a></li>
+        </ul>
+    </div>
+    <div id="upperRight" class="headerGridArea">
+        <button type="button" class="getHelpBtn" style="background-color: transparent; border: 1px solid white; color: white;">
+            Get professional help
+        </button>
+        <li><a href="#" style="font-size: 15px;">Sign-in</a></li>
+        <li><a href="#">Help</a></li>
+    </div>
+    <div id="lowerRight" class="headerGridArea">
+        <button type="button" class="seachIcon" style="border: none; background-color:transparent;">
+            <img src="../images/search-icon.png" style="height: 30px; margin: 0 3%;">
+        </button>
+    </div>
+</section>
+
+<!--breadcrumb-->
+<nav style="--bs-breadcrumb-divider: '>';"aria-label="breadcrumb"> 
+    <ol class="breadcrumb">
+        <i class="bi bi-house-door-fill"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+          </svg>
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Self-help</li>
+        <li class="breadcrumb-item active" aria-current="page">Yoga</li>
+    </ol>
+</nav>
+
+<main role="main">
+  <!-- Page Title -->
+    <section class="text-center">
+        <div class="container">
+            <h1 class="cover-heading" style="font-size: 35px; font-weight: bold;">Yoga Videos</h1>
+            <br>
+            <p class="lead" style="font-size: 25px;"><dl> Yoga's incorporation of meditation and breathing can help improve a person's mental well-being.</dl>  
+             </p>
+        </div>
+    </section>
+
+<br>
+
+    <div class="fp-tableCell">
+        <div class="container">
+            <div class="search_section">
+                <form role="search" method="get" class="search-form formsub" >
+                    <div class="searchform_wrapper">
+                        <span class="search-icon"><i class="fa fa-search"></i></span>
+        
+                        <input type="search" id="" class="search-field av-input-hasicon"
+                         placeholder="Find yoga videos..." name="s">
+                        <input type="submit" class="button buttonsubmit" id="buttonsubmit" value="SEARCH">
+                    </div>
+                </form>
+                <div class="quick-search">
+                    <h4 style="font-size: 15px; font-weight: bold;">Quick Search</h4>
+                    <ul>
+                        <li><a href="#">Hatha</a></li>
+                        <li><a href="#">Restorative</a></li>
+                        <li><a href="#">Meditation</a></li>
+                        <li><a href="#">Vinyasa</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="yogaBg" style="margin: 12%;">
+    <section class="text-align">
+        <div class="container">
+            <h5 class="cover-heading" style="font-size: 25px; font-weight: bold; color: #2F6174;">New Videos</h5>
+            </div>
+    </section>
+
+    <div class="album py-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=uH2N2gmjhl0&t=520s">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Hatha Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Hatha Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Gentle Beginners Yoga Class</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 20 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=7ciS93shMNQ">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Vinyasa Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern1" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/5384538/pexels-photo-5384538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern1)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Vinyasa Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Power Vinyasa Flow</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 30 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=rrLkhg3fA0M">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Restorative Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern12" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/3822164/pexels-photo-3822164.jpeg?cs=srgb&dl=pexels-elina-fairytale-3822164.jpg&fm=jpg"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern12)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Restorative Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Relaxing Practice</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 35 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="album py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=UR469yFLX2w">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Yin Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern0" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/3822366/pexels-photo-3822366.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern0)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Yin Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Stretch the day’s tension away with this yin yoga sequence</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 35 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=GWg-siH2VEA">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Hatha Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern20" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/7530371/pexels-photo-7530371.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern20)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Hatha Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Flow Yoga For Beginners-Discover the Hatha Yoga Style (All Levels)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 30 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=7ciS93shMNQ">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Vinyasa Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern10" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/6246389/pexels-photo-6246389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern10)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Vinyasa Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Power Vinyasa Flow</p>
+                        <br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 30 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="album py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=d4S4twjeWTs">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Meditation</title>
+                            <defs>
+                                <pattern id="imgpattern00" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/2908175/pexels-photo-2908175.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern00)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Meditation</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Meditation For Inner Peace</p>
+                        <br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 10 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=GWg-siH2VEA">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Hatha Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern30" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern30)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Hatha Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Hatha Yoga routine</p>
+                        <br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right;"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 25 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 video-wrap favorite">
+                    <div class="card mb-4 shadow-sm">
+
+                        <a href="https://www.youtube.com/watch?v=7ciS93shMNQ">
+                        <div class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.69 311.69">
+                                <path d="M155.84,0A155.85,155.85,0,1,0,311.69,155.84,155.84,155.84,0,0,0,155.84,0Zm0,296.42A140.58,140.58,0,1,1,296.42,155.84,140.58,140.58,0,0,1,155.84,296.42Z"></path>
+                                <polygon points="218.79 155.84 119.22 94.34 119.22 217.34 218.79 155.84"></polygon>
+                            </svg>
+                        </div>
+                        </a>
+
+                            <div class="favorite-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                  </svg>
+                                </div>
+
+                        
+
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Vinyasa Yoga</title>
+                            <defs>
+                                <pattern id="imgpattern16" x="0" y="0" width="1" height="1"
+                                         viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                                    <image width="1024" height="576" 
+                                    xlink:href="https://images.pexels.com/photos/8846287/pexels-photo-8846287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#imgpattern16)"/></svg>
+                        <div class="card-body">
+
+
+
+                            <div class="container">
+                              <div class="row">
+                                <svg  class="d-flex" focusable="false" viewBox="0 0 24 24" aria-hidden="true" 
+                                style="height: 30px; width: 25px; color: rgba(0, 0, 0, 0.54);">
+                                <path d="M17.844 5.804L13.2 9.183a4.003 4.003 0 0 1 2.794 3.573l1.144-.859a38.799 38.799 0 0 0 4.156-3.604 1.828 1.828 0 0 0 0-2.586 2.31 2.31 0 0 0-2.992-.235l-.457.332zM15.83 4.797l1.295-.942a4.31 4.31 0 0 1 5.583.438 3.828 3.828 0 0 1 0 5.414 40.799 40.799 0 0 1-4.37 3.79l-4.04 3.03c-.5.375-1.076.597-1.665.666a4.999 4.999 0 0 1-3.282-.299L2.148 13.62a2 2 0 0 1-.349-3.438L10.92 3.55a2 2 0 0 1 2.071-.172l2.838 1.42zm-1.822 1.325l-1.91-.956L2.976 11.8 8.17 14.16a4 4 0 0 1-.164-1.403 3.946 3.946 0 0 1 1.618-3.449l4.382-3.187zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+                                &nbsp;
+                                <p class="d-flex">Vinyasa Yoga</p>
+                              </div>
+                            </div>
+
+
+
+
+
+                        <p class="card-text">Power Vinyasa Flow (All Levels)</p>
+                        <br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    
+                                </div>
+                                <p style="text-align: right"><small class="text-muted"> <i class="bi bi-clock"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/> 
+                                  </svg> &nbsp; 25 min</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+   
+      <div class="pagination"><ul class="page-numbers">
+        <li><span aria-current="page" class="page-numbers current">1</span></li>
+        <li><a class="page-numbers" href="#">2</a></li>
+        <li><a class="page-numbers" href="#">3</a></li>
+        <li><span class="page-numbers dots">...</span></li>
+        <li><a class="page-numbers" href="#">7</a></li>
+        <li><a class="next page-numbers" href="#">Next</a></li>
+    </ul>
+    </div>     
+        
+<!--Feedback section-->
+<div id="feedback">
+    <img style="height: 200px;" src="../images/feedback.png">
+    <p style="text-align: center; margin-bottom: 10px; color:#2F6174; font-size: 15px;">
+        We’re happy when seeing you improving the mental life
+    <br>and<br>
+    We would love to improve ourself as well!
+    </p>
+    <button type="button" style=" margin: 10px 0;font-size: 15px; padding: 2%;border: 1px solid #2F6174;color: #2F6174; font-size: 15px; background-color: transparent;">
+    Give Feedback
+    </button>
+    </div>
+</div>
+</main>
+<footer>
+    <section class="flexFooter">
+        <button type="button" class="logoHome">
+            <img src="../images/Logo.png" alt="logo" style="height: 100px; margin: 3px 20px;">
+        </button>
+        <div id="footer1" style="color: white;" class="footerGridArea">
+            <a href="" class="footerNav"; style="color: white;">
+                About us</a>
+            <a href="" class="footerNav" style="color: white;">
+                Contact us</a>
+        </div>
+        <div id="footer2" class="footerGridArea">
+            <a href="" class="footerNav" style="color: white;">
+            Home</a>
+            <a href="" class="footerNav" style="color: white;">
+            Helplines</a>
+            <a href="" class="footerNav" style="color: white;">
+            Articles</a>
+            <a href="" class="footerNav" style="color: white;">
+            Self-help</a>
+        </div>
+        <div id="footer3" class="footerGridArea">
+            <a href="" class="footerNav" style="color: white;">
+                Sign-in</a>
+            <p style="font-size: 13px; font-weight: 300px; color:white; margin-bottom: 5px;">
+            Gain access to more tools an our weekly news!
+            </p>
+        <div class="inputEmail">
+            <input id="text" placeholder="Your email adress">
+        <button type="button" class="submitBtn">
+        Submit
+        </button>
+        </div>
+        </div>
+</footer>
+</body>
+</html>
